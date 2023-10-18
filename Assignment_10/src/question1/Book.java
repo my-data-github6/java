@@ -1,8 +1,8 @@
-package question_1;
+package question1;
 
 import java.util.Scanner;
 
-public class Book{
+public class Book {
 	private String isbn;
 	private double price;
 	private String authorName;
@@ -19,49 +19,43 @@ public class Book{
 		this.authorName = authorName;
 		this.quantity = quantity;
 	}
-
+	
+	
 	public String getIsbn() {
 		return isbn;
 	}
-
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-
 	public double getPrice() {
 		return price;
 	}
-
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
 	public String getAuthorName() {
 		return authorName;
 	}
-
 	public void setAuthorName(String authorName) {
 		this.authorName = authorName;
 	}
-
 	public int getQuantity() {
 		return quantity;
 	}
-
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	
 	public void accept() {
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.println("Enter isbn :");
-			this.isbn= sc.next();
-			System.out.println("Enter price :");
-			this.price= sc.nextDouble();
-			System.out.println("Enter Author Name :");
-			this.authorName= sc.next();
-			System.out.println("Enter Quantity :");
-			this.quantity= sc.nextInt();
-		}
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter isbn :");
+		this.isbn= sc.next();
+		System.out.println("Enter price :");
+		this.price=sc.nextDouble();
+		System.out.println("Enter Author Name :");
+		this.authorName=sc.next();
+		System.out.println("Enter Quantity :");
+		this.quantity=sc.nextInt();
 	}
 	
 	@Override
@@ -72,14 +66,9 @@ public class Book{
 		else
 			return super.equals(obj);
 	}
-	
 	@Override
-             public String toString() {
-						return "Book [isbn=" + isbn + ", price=" + price + ", authorName=" + authorName + ", quantity=" + quantity
-								+ "]";
-		
-		
-		
+	public String toString() {
+		return "Book [isbn=" + isbn + ", price=" + price + ", authorName=" + authorName + ", quantity=" + quantity
+				+ "]";
 	}
-	
 }

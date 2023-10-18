@@ -1,4 +1,4 @@
-package question_2;
+package question2;
 
 import java.util.*;
 
@@ -7,16 +7,17 @@ public class StringLength {
 	public static void main(String[] args) {
 		
 		List<String> list = new ArrayList<>();
-		list.add("Priyanka");
-		list.add("Rachna");
+		list.add("Varad Somawar");
+		list.add("Rutvik");
 		list.add("Abhijit");
-		list.add("Amanushdada");
+		list.add("Jagdish");
 		list.add("Ashish");
-		list.add("Rohini");
-		list.add("Moru");
-		list.add("Krishai");
-		list.add("Zaradan");
-		
+		list.add("Rohit");
+		list.add("Mor");
+		list.add("Krisha");
+		list.add("Zarad");
+
+		//local class
 		class Max implements Comparator<String>{
 		@Override
 		public int compare(String s1, String s2) {
@@ -25,5 +26,6 @@ public class StringLength {
 		}
 		Max m1 = new Max(); 
 		System.out.println("high string :"+ Collections.max(list,m1));
+//		System.out.println("high string :"+ Collections.max(list));
 	}
 }

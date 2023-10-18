@@ -1,11 +1,11 @@
-package question_1;
+package question1;
 
 import java.util.*;
 //import java.util.Comparator;
 //import java.util.List;
 //import java.util.Scanner;
 
-public class Testerbook {
+public class TesterBook {
 	
 	
 	public static int menu() {
@@ -79,8 +79,7 @@ public class Testerbook {
 				break;
 			case 5:{
 				System.out.println("Enter the isbn which book you have to Delete :");
-				Scanner scanner = new Scanner(System.in);
-				String isbn = scanner.next();
+				String isbn = new Scanner(System.in).next();
 				b = new Book();
 				b.setIsbn(isbn);
 				index = list.indexOf(b);
