@@ -16,7 +16,7 @@ public class Sort {
 				}
 			}
 			public static void main(String[] args) {
-				
+				//local class
 				class SortArray implements Comparator<Double>{
 					@Override
 					public int compare(Double arg0, Double arg1) {
