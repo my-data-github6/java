@@ -1,0 +1,15 @@
+package com.sunbeam;
+
+/*
+ * 5. Store Books in HashMap<> so that for given isbn, book can be 
+ * searched in fastest possible time. Do we need to write equals() 
+ * and hashCode() in Book class?
+ */
+public class TesterHashSet {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.sunbeam;
+
+import java.util.LinkedHashSet;
+
+/*2. In above assignment use LinkedHashSet instead of HashSet. 
+ * If any book with duplicate isbn is added, what will happen? 
+ * Books are stored in which order?
+ * 
+ */
+public class TesterLinkedHashSet {
+	
+	LinkedHashSet<Book> lHset = new LinkedHashSet<>();
+
+	Book b;
+	b= new Book("var1",799.00,"Varad",1);
+	set.add(b);
+	b = new Book("var2",599.00,"Abhi",2);
+	set.add(b);
+	b = new Book("var3",699.00,"jag",3);
+	set.add(b);
+	b = new Book("var1",899.00,"Var",2);
+	set.add(b);
+}

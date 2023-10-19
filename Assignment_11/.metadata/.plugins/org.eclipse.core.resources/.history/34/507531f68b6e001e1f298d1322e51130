@@ -1,0 +1,21 @@
+package com.sunbeam;
+
+import java.util.LinkedHashMap;
+
+/*
+ *6. Store Students in LinkedHashMap<> so that, for given roll, 
+ *Student can be searched in fastest possible time. Do we need to 
+ *write equals() and hashCode() in Student class? Follow menu-driven
+ *approach.
+ */
+
+public class TesterLinkedHashMap {
+
+	public static void main(String[] args) {
+		LinkedHashMap<Student> lmap = new LinkedHashMap<>();
+		
+		
+
+	}
+
+}

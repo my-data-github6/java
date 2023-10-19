@@ -1,0 +1,23 @@
+package com.sunbeam;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class TesterHashSet {
+
+	public static void main(String[] args) {
+		
+		Set<Book> set = new HashSet();
+		
+		Book b;
+		b= new Book("var1",799.00,"Varad",1);
+		set.add(b);
+		b = new Book("var2",599.00,"Abhi",2);
+		set.add(b);
+
+		
+		
+
+	}
+
+}
